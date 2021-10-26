@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outerdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .innerdiv {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 700px;
+            height: 900px;
+            border-radius: 12px;
+            background-color: rgb(7, 136, 136);
+            gap: 10px;
+
+
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            gap: 5px;
+            border: solid black 4px;
+            background-color: whitesmoke;
+            border-radius: 8px;
+
+        }
+
+        th,
+        td {
+            color: black;
+            font-weight: bold;
+            width: 50px;
+            height: 50px;
+        }
+
+        input {
+            text-align: center;
+            width: 90%;
+            height: 90%;
+            border: solid black 2px;
+            background-color: inherit;
+            font-weight: bold;
+
+        }
+
+        .setcolor {
+            background-color: crimson;
+        }
+
+        #desginpt {
+            width: 70%;
+            height: 30px;
+            border: solid white 2px;
+            color: white;
+            border-radius: 8px;
+            outline: white;
+
+        }
+
+        .desgbutton {
+            width: 30%;
+            height: 30px;
+            border: solid white 2px;
+            color: rgb(17, 16, 16);
+            border-radius: 8px;
+            outline: white;
+
+        }
+
+    </style>
+
+
+</head>
+
+<body class="outerdiv">
+
+    <div class="innerdiv">
+        <input type="text" placeholder="Enter Your Name" id="desginpt" />
+        <button class="desgbutton" onclick="startgame()">Start Game</button>
+        <h3 id="h1desg"></h3>
+        <table>
+
+            <tr>
+                <th><input maxlength="1" id="r1c1" /></th>
+                <th><input maxlength="1" id="r1c2" /></th>
+                <th><input maxlength="1" id="r1c3" /></th>
+                <th><input maxlength="1" id="r1c4" class="setcolor" /></th>
+                <th><input maxlength="1" id="r1c5" class="setcolor" /></th>
+                <th><input maxlength="1" id="r1c6" class="setcolor" /></th>
+                <th><input maxlength="1" id="r1c7" /></th>
+                <th><input maxlength="1" id="r1c8" /></th>
+                <th><input maxlength="1" id="r1c9" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r2c1" /></th>
+                <th><input maxlength="1" id="r2c2" /></th>
+                <th><input maxlength="1" id="r2c3" /></th>
+                <th><input maxlength="1" id="r2c4" class="setcolor" /></th>
+                <th><input maxlength="1" id="r2c5" class="setcolor" /></th>
+                <th><input maxlength="1" id="r2c6" class="setcolor" /></th>
+                <th><input maxlength="1" id="r2c7" /></th>
+                <th><input maxlength="1" id="r2c8" /></th>
+                <th><input maxlength="1" id="r2c9" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r3c1" /></th>
+                <th><input maxlength="1" id="r3c2" /></th>
+                <th><input maxlength="1" id="r3c3" /></th>
+                <th><input maxlength="1" id="r3c4" class="setcolor" /></th>
+                <th><input maxlength="1" id="r3c5" class="setcolor" /></th>
+                <th><input maxlength="1" id="r3c6" class="setcolor" /></th>
+                <th><input maxlength="1" id="r3c7" /></th>
+                <th><input maxlength="1" id="r3c8" /></th>
+                <th><input maxlength="1" id="r3c9" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r4c1" class="setcolor" /></th>
+                <th><input maxlength="1" id="r4c2" class="setcolor" /></th>
+                <th><input maxlength="1" id="r4c3" class="setcolor" /></th>
+                <th><input maxlength="1" id="r4c4" /></th>
+                <th><input maxlength="1" id="r4c5" /></th>
+                <th><input maxlength="1" id="r4c6" /></th>
+                <th><input maxlength="1" id="r4c7" class="setcolor" /></th>
+                <th><input maxlength="1" id="r4c8" class="setcolor" /></th>
+                <th><input maxlength="1" id="r4c9" class="setcolor" /></th>
+
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r5c1" class="setcolor" /></th>
+                <th><input maxlength="1" id="r5c2" class="setcolor" /></th>
+                <th><input maxlength="1" id="r5c3" class="setcolor" /></th>
+                <th><input maxlength="1" id="r5c4" /></th>
+                <th><input maxlength="1" id="r5c5" /></th>
+                <th><input maxlength="1" id="r5c6" /></th>
+                <th><input maxlength="1" id="r5c7" class="setcolor" /></th>
+                <th><input maxlength="1" id="r5c8" class="setcolor" /></th>
+                <th><input maxlength="1" id="r5c9" class="setcolor" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r6c1" class="setcolor" /></th>
+                <th><input maxlength="1" id="r6c2" class="setcolor" /></th>
+                <th><input maxlength="1" id="r6c3" class="setcolor" /></th>
+                <th><input maxlength="1" id="r6c4" /></th>
+                <th><input maxlength="1" id="r6c5" /></th>
+                <th><input maxlength="1" id="r6c6" /></th>
+                <th><input maxlength="1" id="r6c7" class="setcolor" /></th>
+                <th><input maxlength="1" id="r6c8" class="setcolor" /></th>
+                <th><input maxlength="1" id="r6c9" class="setcolor" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r7c1" /></th>
+                <th><input maxlength="1" id="r7c2" /></th>
+                <th><input maxlength="1" id="r7c3" /></th>
+                <th><input maxlength="1" id="r7c4" class="setcolor" /></th>
+                <th><input maxlength="1" id="r7c5" class="setcolor" /></th>
+                <th><input maxlength="1" id="r7c6" class="setcolor" /></th>
+                <th><input maxlength="1" id="r7c7" /></th>
+                <th><input maxlength="1" id="r7c8" /></th>
+                <th><input maxlength="1" id="r7c9" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r8c1" /></th>
+                <th><input maxlength="1" id="r8c2" /></th>
+                <th><input maxlength="1" id="r8c3" /></th>
+                <th><input maxlength="1" id="r8c4" class="setcolor" /></th>
+                <th><input maxlength="1" id="r8c5" class="setcolor" /></th>
+                <th><input maxlength="1" id="r8c6" class="setcolor" /></th>
+                <th><input maxlength="1" id="r8c7" /></th>
+                <th><input maxlength="1" id="r8c8" /></th>
+                <th><input maxlength="1" id="r8c9" /></th>
+            </tr>
+            <tr>
+                <th><input maxlength="1" id="r9c1" /></th>
+                <th><input maxlength="1" id="r9c2" /></th>
+                <th><input maxlength="1" id="r9c3" /></th>
+                <th><input maxlength="1" id="r9c4" class="setcolor" /></th>
+                <th><input maxlength="1" id="r9c5" class="setcolor" /></th>
+                <th><input maxlength="1" id="r9c6" class="setcolor" /></th>
+                <th><input maxlength="1" id="r9c7" /></th>
+                <th><input maxlength="1" id="r9c8" /></th>
+                <th><input maxlength="1" id="r9c9" /></th>
+            </tr>
+        </table>
+        <button onclick="seudo()" class="desgbutton">Submit</button>
+        <p id="sudko"></p>
+    </div>
+
+</body>
+<script>
+
+    function startgame() {
+        const username = document.getElementById("desginpt").value
+
+        document.getElementById("h1desg").innerHTML = "Welcome" + " " + username
+        document.getElementById("h1desg").style.color = "white"
+        document.getElementById("r1c1").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r2c2").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r3c3").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r4c4").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r5c5").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r6c6").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r7c7").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r8c8").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r9c9").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r9c1").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r8c2").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r7c3").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r6c4").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r4c6").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r3c7").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r2c8").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r2c8").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r1c9").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r3c5").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r4c6").value = Math.floor((Math.random() * 9) + 1)
+        document.getElementById("r5c8").value = Math.floor((Math.random() * 9) + 1)
+
+        document.getElementById("r1c1").disabled = true
+        document.getElementById("r2c2").disabled = true
+        document.getElementById("r3c3").disabled = true
+        document.getElementById("r4c4").disabled = true
+        document.getElementById("r5c5").disabled = true
+        document.getElementById("r7c7").disabled = true
+        document.getElementById("r8c8").disabled = true
+        document.getElementById("r9c9").disabled = true
+        document.getElementById("r9c1").disabled = true
+        document.getElementById("r8c2").disabled = true
+
+        document.getElementById("r7c3").disabled = true
+        document.getElementById("r6c4").disabled = true
+        document.getElementById("r4c6").disabled = true
+        document.getElementById("r3c7").disabled = true
+        document.getElementById("r2c8").disabled = true
+        document.getElementById("r1c9").disabled = true
+        document.getElementById("r3c5").disabled = true
+        document.getElementById("r4c6").disabled = true
+        document.getElementById("r5c8").disabled = true
+
+    }
+
+    function seudo() {
+        const r1c1 = document.getElementById("r1c1").value
+        const r1c2 = document.getElementById("r1c2").value
+        const r1c3 = document.getElementById("r1c3").value
+        const r1c4 = document.getElementById("r1c4").value
+        const r1c5 = document.getElementById("r1c5").value
+        const r1c6 = document.getElementById("r1c6").value
+        const r1c7 = document.getElementById("r1c7").value
+        const r1c8 = document.getElementById("r1c8").value
+        const r1c9 = document.getElementById("r1c9").value
+
+        const r2c1 = document.getElementById("r2c1").value
+        const r2c2 = document.getElementById("r2c2").value
+        const r2c3 = document.getElementById("r2c3").value
+        const r2c4 = document.getElementById("r2c4").value
+        const r2c5 = document.getElementById("r2c5").value
+        const r2c6 = document.getElementById("r2c6").value
+        const r2c7 = document.getElementById("r2c7").value
+        const r2c8 = document.getElementById("r2c8").value
+        const r2c9 = document.getElementById("r2c9").value
+
+
+        const r3c1 = document.getElementById("r3c1").value
+        const r3c2 = document.getElementById("r3c2").value
+        const r3c3 = document.getElementById("r3c3").value
+        const r3c4 = document.getElementById("r3c4").value
+        const r3c5 = document.getElementById("r3c5").value
+        const r3c6 = document.getElementById("r3c6").value
+        const r3c7 = document.getElementById("r3c7").value
+        const r3c8 = document.getElementById("r3c8").value
+        const r3c9 = document.getElementById("r3c9").value
+
+        const r4c1 = document.getElementById("r4c1").value
+        const r4c2 = document.getElementById("r4c2").value
+        const r4c3 = document.getElementById("r4c3").value
+        const r4c4 = document.getElementById("r4c4").value
+        const r4c5 = document.getElementById("r4c5").value
+        const r4c6 = document.getElementById("r4c6").value
+        const r4c7 = document.getElementById("r4c7").value
+        const r4c8 = document.getElementById("r4c8").value
+        const r4c9 = document.getElementById("r4c9").value
+
+        const r5c1 = document.getElementById("r5c1").value
+        const r5c2 = document.getElementById("r5c2").value
+        const r5c3 = document.getElementById("r5c3").value
+        const r5c4 = document.getElementById("r5c4").value
+        const r5c5 = document.getElementById("r5c5").value
+        const r5c6 = document.getElementById("r5c6").value
+        const r5c7 = document.getElementById("r5c7").value
+        const r5c8 = document.getElementById("r5c8").value
+        const r5c9 = document.getElementById("r5c9").value
+
+        const r6c1 = document.getElementById("r6c1").value
+        const r6c2 = document.getElementById("r6c2").value
+        const r6c3 = document.getElementById("r6c3").value
+        const r6c4 = document.getElementById("r6c4").value
+        const r6c5 = document.getElementById("r6c5").value
+        const r6c6 = document.getElementById("r6c6").value
+        const r6c7 = document.getElementById("r6c7").value
+        const r6c8 = document.getElementById("r6c8").value
+        const r6c9 = document.getElementById("r6c9").value
+
+        const r7c1 = document.getElementById("r7c1").value
+        const r7c2 = document.getElementById("r7c2").value
+        const r7c3 = document.getElementById("r7c3").value
+        const r7c4 = document.getElementById("r7c4").value
+        const r7c5 = document.getElementById("r7c5").value
+        const r7c6 = document.getElementById("r7c6").value
+        const r7c7 = document.getElementById("r7c7").value
+        const r7c8 = document.getElementById("r7c8").value
+        const r7c9 = document.getElementById("r7c9").value
+
+        const r8c1 = document.getElementById("r8c1").value
+        const r8c2 = document.getElementById("r8c2").value
+        const r8c3 = document.getElementById("r8c3").value
+        const r8c4 = document.getElementById("r8c4").value
+        const r8c5 = document.getElementById("r8c5").value
+        const r8c6 = document.getElementById("r8c6").value
+        const r8c7 = document.getElementById("r8c7").value
+        const r8c8 = document.getElementById("r8c8").value
+        const r8c9 = document.getElementById("r8c9").value
+
+        const r9c1 = document.getElementById("r9c1").value
+        const r9c2 = document.getElementById("r9c2").value
+        const r9c3 = document.getElementById("r9c3").value
+        const r9c4 = document.getElementById("r9c4").value
+        const r9c5 = document.getElementById("r9c5").value
+        const r9c6 = document.getElementById("r9c6").value
+        const r9c7 = document.getElementById("r9c7").value
+        const r9c8 = document.getElementById("r9c8").value
+        const r9c9 = document.getElementById("r9c9").value
+
+        const row1 = Number(r1c1) + Number(r1c2) + Number(r1c3) + Number(r1c4) + Number(r1c5) + Number(r1c6) + Number(r1c7) + Number(r1c8) + Number(r1c9)
+        const row2 = Number(r2c1) + Number(r2c2) + Number(r2c3) + Number(r2c4) + Number(r2c5) + Number(r2c6) + Number(r2c7) + Number(r2c8) + Number(r2c9)
+        const row3 = Number(r3c1) + Number(r3c2) + Number(r3c3) + Number(r3c4) + Number(r3c5) + Number(r3c6) + Number(r3c7) + Number(r3c8) + Number(r3c9)
+        const row4 = Number(r4c1) + Number(r4c2) + Number(r4c3) + Number(r4c4) + Number(r4c5) + Number(r4c6) + Number(r4c7) + Number(r4c8) + Number(r4c9)
+        const row5 = Number(r5c1) + Number(r5c2) + Number(r5c3) + Number(r5c4) + Number(r5c5) + Number(r5c6) + Number(r5c7) + Number(r5c8) + Number(r5c9)
+        const row6 = Number(r6c1) + Number(r6c2) + Number(r6c3) + Number(r6c4) + Number(r6c5) + Number(r6c6) + Number(r6c7) + Number(r6c8) + Number(r6c9)
+        const row7 = Number(r7c1) + Number(r7c2) + Number(r7c3) + Number(r7c4) + Number(r7c5) + Number(r7c6) + Number(r7c7) + Number(r7c8) + Number(r7c9)
+        const row8 = Number(r8c1) + Number(r8c2) + Number(r8c3) + Number(r8c4) + Number(r8c5) + Number(r8c6) + Number(r8c7) + Number(r8c8) + Number(r8c9)
+        const row9 = Number(r9c1) + Number(r9c2) + Number(r9c3) + Number(r9c4) + Number(r9c5) + Number(r9c6) + Number(r9c7) + Number(r9c8) + Number(r9c9)
+        const col1 = Number(r1c1) + Number(r2c1) + Number(r3c1) + Number(r4c1) + Number(r5c1) + Number(r6c1) + Number(r7c1) + Number(r8c1) + Number(r9c1)
+        const col2 = Number(r1c2) + Number(r2c2) + Number(r3c2) + Number(r4c2) + Number(r5c2) + Number(r6c2) + Number(r7c2) + Number(r8c2) + Number(r9c2)
+        const col3 = Number(r1c3) + Number(r2c3) + Number(r3c3) + Number(r4c3) + Number(r5c3) + Number(r6c3) + Number(r7c3) + Number(r8c3) + Number(r9c3)
+        const col4 = Number(r1c4) + Number(r2c4) + Number(r3c4) + Number(r4c4) + Number(r5c4) + Number(r6c4) + Number(r7c4) + Number(r8c4) + Number(r9c4)
+        const col5 = Number(r1c5) + Number(r2c5) + Number(r3c5) + Number(r4c5) + Number(r5c5) + Number(r6c5) + Number(r7c5) + Number(r8c5) + Number(r9c5)
+        const col6 = Number(r1c6) + Number(r2c6) + Number(r3c6) + Number(r4c6) + Number(r5c6) + Number(r6c6) + Number(r7c6) + Number(r8c6) + Number(r9c6)
+        const col7 = Number(r1c7) + Number(r2c7) + Number(r3c7) + Number(r4c7) + Number(r5c7) + Number(r6c7) + Number(r7c7) + Number(r8c7) + Number(r9c7)
+        const col8 = Number(r1c8) + Number(r2c8) + Number(r3c8) + Number(r4c8) + Number(r5c8) + Number(r6c8) + Number(r7c8) + Number(r8c8) + Number(r9c8)
+        const col9 = Number(r1c9) + Number(r2c9) + Number(r3c9) + Number(r4c9) + Number(r5c9) + Number(r6c9) + Number(r7c9) + Number(r8c9) + Number(r9c9)
+
+        const box1 = Number(r1c1) + Number(r1c2) + Number(r1c3) + Number(r2c1) + Number(r2c2) + Number(r2c3) + Number(r3c1) + Number(r3c2) + Number(r3c3)
+        const box2 = Number(r1c4) + Number(r1c5) + Number(r1c6) + Number(r2c4) + Number(r2c5) + Number(r2c6) + Number(r3c4) + Number(r3c5) + Number(r3c6)
+        const box3 = Number(r1c7) + Number(r1c8) + Number(r1c9) + Number(r2c7) + Number(r2c8) + Number(r2c9) + Number(r3c7) + Number(r3c8) + Number(r3c9)
+
+        const box4 = Number(r4c1) + Number(r4c2) + Number(r4c3) + Number(r5c1) + Number(r5c2) + Number(r5c3) + Number(r6c1) + Number(r6c2) + Number(r6c3)
+        const box5 = Number(r4c4) + Number(r4c5) + Number(r4c6) + Number(r5c4) + Number(r5c5) + Number(r5c6) + Number(r6c4) + Number(r6c5) + Number(r6c6)
+        const box6 = Number(r4c7) + Number(r4c8) + Number(r4c9) + Number(r5c7) + Number(r5c8) + Number(r5c9) + Number(r6c7) + Number(r6c8) + Number(r6c9)
+
+        const box7 = Number(r7c1) + Number(r7c2) + Number(r7c3) + Number(r8c1) + Number(r8c2) + Number(r8c3) + Number(r9c1) + Number(r9c2) + Number(r9c3)
+        const box8 = Number(r7c4) + Number(r7c5) + Number(r7c6) + Number(r8c4) + Number(r8c5) + Number(r8c6) + Number(r9c4) + Number(r9c5) + Number(r9c6)
+        const box9 = Number(r7c7) + Number(r7c8) + Number(r7c9) + Number(r8c7) + Number(r8c8) + Number(r8c9) + Number(r9c7) + Number(r9c8) + Number(r9c9)
+
+        if (row1 === 45 && row2 === 45 && row3 === 45 && row4 === 45 && row5 === 45 && row6 === 45 && row7 === 45 && row8 === 45 && row9 === 45 && col1 === 45 && col2 === 45 && col3 === 45 && col4 == 45
+            && col4 === 45 && col5 === 45 && col6 === 45 && col7 === 45 && col8 === 45 && col9 === 45 && box1 === 45 && box2 === 45 && box3 === 45 && box4 == 45 && box5 === 45 && box6 === 45 && box7 === 45 && box8 === 45 && box9 === 45) {
+            document.getElementById("sudko").innerHTML = "Congratulation ):you sloved the sudko puzzle"
+            document.getElementById("sudko").style.color = "green"
+            document.getElementById("sudko").style.fontWeight = "bold"
+
+
+
+        }
+        else {
+            document.getElementById("sudko").innerHTML = "Sorry! you didn't solve the sudko puzzle"
+            document.getElementById("sudko").style.color = "red"
+            document.getElementById("sudko").style.fontWeight = "bold"
+
+
+        }
+
+    }
+</script>
+
+</html>
