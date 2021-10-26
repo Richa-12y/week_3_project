@@ -57,6 +57,7 @@
             background-color: inherit;
             font-weight: bold;
 
+
         }
 
         .setcolor {
@@ -71,6 +72,11 @@
             border-radius: 8px;
             outline: white;
 
+
+        }
+
+        #desginpt::placeholder {
+            color: white
         }
 
         .desgbutton {
@@ -82,7 +88,6 @@
             outline: white;
 
         }
-
     </style>
 
 
@@ -206,52 +211,62 @@
 
     function startgame() {
         const username = document.getElementById("desginpt").value
+        if (username.length) {
 
-        document.getElementById("h1desg").innerHTML = "Welcome" + " " + username
-        document.getElementById("h1desg").style.color = "white"
-        document.getElementById("r1c1").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r2c2").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r3c3").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r4c4").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r5c5").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r6c6").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r7c7").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r8c8").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r9c9").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r9c1").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r8c2").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r7c3").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r6c4").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r4c6").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r3c7").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r2c8").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r2c8").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r1c9").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r3c5").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r4c6").value = Math.floor((Math.random() * 9) + 1)
-        document.getElementById("r5c8").value = Math.floor((Math.random() * 9) + 1)
 
-        document.getElementById("r1c1").disabled = true
-        document.getElementById("r2c2").disabled = true
-        document.getElementById("r3c3").disabled = true
-        document.getElementById("r4c4").disabled = true
-        document.getElementById("r5c5").disabled = true
-        document.getElementById("r7c7").disabled = true
-        document.getElementById("r8c8").disabled = true
-        document.getElementById("r9c9").disabled = true
-        document.getElementById("r9c1").disabled = true
-        document.getElementById("r8c2").disabled = true
 
-        document.getElementById("r7c3").disabled = true
-        document.getElementById("r6c4").disabled = true
-        document.getElementById("r4c6").disabled = true
-        document.getElementById("r3c7").disabled = true
-        document.getElementById("r2c8").disabled = true
-        document.getElementById("r1c9").disabled = true
-        document.getElementById("r3c5").disabled = true
-        document.getElementById("r4c6").disabled = true
-        document.getElementById("r5c8").disabled = true
+            document.getElementById("h1desg").innerHTML = "Welcome" + " " + username
+            document.getElementById("h1desg").style.color = "white"
+            document.getElementById("r1c1").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r2c2").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r3c3").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r4c4").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r5c5").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r6c6").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r7c7").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r8c8").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r9c9").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r9c1").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r8c2").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r7c3").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r6c4").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r4c6").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r3c7").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r2c8").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r2c8").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r1c9").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r3c5").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r4c6").value = Math.floor((Math.random() * 9) + 1)
+            document.getElementById("r5c8").value = Math.floor((Math.random() * 9) + 1)
 
+            document.getElementById("r1c1").disabled = true
+            document.getElementById("r2c2").disabled = true
+            document.getElementById("r3c3").disabled = true
+            document.getElementById("r4c4").disabled = true
+            document.getElementById("r5c5").disabled = true
+            document.getElementById("r7c7").disabled = true
+            document.getElementById("r8c8").disabled = true
+            document.getElementById("r9c9").disabled = true
+            document.getElementById("r9c1").disabled = true
+            document.getElementById("r8c2").disabled = true
+
+            document.getElementById("r7c3").disabled = true
+            document.getElementById("r6c4").disabled = true
+            document.getElementById("r4c6").disabled = true
+            document.getElementById("r3c7").disabled = true
+            document.getElementById("r2c8").disabled = true
+            document.getElementById("r1c9").disabled = true
+            document.getElementById("r3c5").disabled = true
+            document.getElementById("r4c6").disabled = true
+            document.getElementById("r5c8").disabled = true
+        }
+        else{
+            document.getElementById("h1desg").innerHTML = "Please Enter Your Name first"
+            document.getElementById("h1desg").style.color = "red"
+            document.getElementById("h1desg").style.fontWeight = "bold"
+
+
+        }
     }
 
     function seudo() {
